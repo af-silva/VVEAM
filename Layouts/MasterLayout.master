@@ -1,0 +1,95 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Layouts_MasterLayout, App_Web_fnyxz3bq" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-pt">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <!--[if lte IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <script src="../Scripts/jquery-1.6.4-vsdoc.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="../Scripts/modernizr.js"></script>
+    <script src="../Scripts/placeholderie.js"></script>
+    <script src="../Scripts/functions.js"></script>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/dkstyles.css" />
+    <!-- mais meta informacao aqui
+        ...
+        <script src="../Scripts/jquery.js"></script>
+    -->
+    <asp:ContentPlaceHolder ID="PageHeader" runat="server">
+        <title runat="server">Vias Verdes do EAM</title>
+        <%--Todo o codigo que seja necessario adicionar ao head da página é carregado aqui--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form">
+    <div id="user-header">
+
+
+            <div style="float:left">
+                <asp:Label ID="lRoleText" runat="server" Text="Esta autenticado como: " Font-Bold="true" ForeColor="White" style="float:left; margin:0 5px; padding: 8px 0;"></asp:Label>
+                <asp:Label ID="lRole" runat="server" Font-Bold="true" ForeColor="White" style="float:left; margin-right:2px; padding: 8px 0;"></asp:Label>
+            </div>
+
+            <div style="float:left">
+                <asp:Label ID="lUserNameText" runat="server" Text="Utilizador: " Font-Bold="true" ForeColor="White" style="float:left; margin:0 5px 0 30px; padding: 8px 0;"></asp:Label>
+                <asp:Label ID="lUserName" runat="server" Font-Bold="true" ForeColor="White" style="float:left; margin-right:5px; padding: 8px 0;"></asp:Label>
+            </div>
+            
+            <div style="float:right">   
+                <asp:LinkButton ID="logOff" runat="server" Font-Bold="true" Font-Underline="true"
+                    ForeColor="White" OnClick="LBLogOff_Click" style="float:right; padding: 8px 18px;">
+                <img src="../Images/Icons/blogout.png" alt="logout" style="float:right; margin-left:5px;"/>
+                </asp:LinkButton>
+            </div> 
+            
+            <div class="clear"></div>
+    </div>
+
+
+    <div id="body">
+        <header id="header">
+            <div id="logo-title">
+                <asp:LinkButton ID="lbImageTitle" runat="server" OnClick="lbImageTitle_Click">
+                    <img id="logo-inem" src="../Images/Image/logoinem.png" alt="Inem Logo" />
+                    <img id="logo-cndcv" src="../Images/Image/Logo_CNDCV4-300x93.jpg" alt="CNDCV Logo" />
+                </asp:LinkButton>
+                <h1>
+                    Registo Nacional do Enfarte Agudo do Miocardio
+                </h1>
+            </div>
+            <asp:ContentPlaceHolder ID="Menu" runat="server">
+                <!-- o menu e carregado aqui consuante o role do utilizador -->
+                <mma:MainMenuAdmin ID="mainAdminMenu" runat="server" Visible="false" />
+                <mmc:MainMenu ID="mainMenuCodu" runat="server" Visible="false" />
+                <mmm:MainMenu ID="mainMenuMedico" runat="server" Visible="false" />
+            </asp:ContentPlaceHolder>
+        </header>
+        <div id="navigation" runat="server" visible="false">
+            <asp:ContentPlaceHolder ID="NavigationBar" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="PageContent" runat="server">
+            <%--Todo o codigo do corpo da página é colocado aqui--%>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="clear" />
+
+    <footer id="footer">
+        <p class="copyright">
+            &copy; 2012 GVVEAM - A presente aplicação é um caso de estudo que se encontra no
+        </p>
+        <p class="copyright">
+            âmbito da realização do Projecto Fim de Curso em Engenharia Informática de Gestão
+        </p>
+        <p class="copyright">
+            Todos os direitos dos logotipos do INEM&reg; e CNDCV&reg; pertencem as respectivas
+            entidades.</p>
+    </footer>
+    </form>
+</body>
+</html>

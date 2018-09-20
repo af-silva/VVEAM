@@ -1,0 +1,31 @@
+﻿<%@ master language="C#" masterpagefile="~/Layouts/MasterLayout.master" autoeventwireup="true" inherits="Layouts_LeftMenuLayout, App_Web_iqvekco1" %>
+
+<asp:Content ID="lmlPageHeader" ContentPlaceHolderID="PageHeader" Runat="Server">
+    <asp:ContentPlaceHolder ID="PageHeader" runat="server">
+        <%--Conteudo do Head--%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="lmlNavigationBar" ContentPlaceHolderID="NavigationBar" Runat="Server">
+    <asp:ContentPlaceHolder ID="NavigationBar" runat="server">
+        <%--Conteudo do NavigationBar--%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="lmlPageContent" ContentPlaceHolderID="PageContent" Runat="Server">
+    <div id="contentwrap">
+        <div id="left-menu">
+            <lm:LeftMenu runat="server" ID="leftMenu" />
+        </div>
+        <div class="clear"></div>
+        <div id="content-menu">
+            <asp:ContentPlaceHolder ID="PageMainContent" Runat="Server">
+        
+                <%--Onde é carregado o conteudo principal da página--%>
+
+            </asp:ContentPlaceHolder>    
+        </div>
+        
+    </div>
+</asp:Content>
+

@@ -1,0 +1,448 @@
+﻿/* CSS do formulario da Ocorrencia */
+/* Inicio dos paineis */
+
+div.panel-header{
+	color: white;
+	background-color: #719DDB;
+	font-size: 12px;
+	cursor: pointer;  
+	height:18px;
+	padding: 4px;
+	margin: 2px;
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+}
+
+div.panel-body{
+	background-color: #FFFFFF;
+	border: 1px gray;  
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	/*height:0px;*/
+	/*overflow: hidden;*/
+	margin-bottom: 2px;
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;  
+}
+
+/* Fim dos paineis */
+
+.ddl-codu{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width: 120px;
+    width: 62%;
+	display: table-cell;
+}
+
+.ddl-localizacao{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width:150px;
+	max-width:270px; 
+	width:60%;
+	float:left;
+}
+
+.ddl-genero{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width:110px; 
+	max-width:170px;
+	float:left;
+}
+
+.ddl-veiculo{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width:140px; 
+	max-width:190px; 
+	width: 50%; 
+	margin: 0 5px 0 0; 
+	float:left;
+	display: table-cell;
+}
+
+.ddl-tripulante{
+	border-color: #7F9DB9;
+	min-width:140px; 
+	max-width:190px; 
+	width: 50%;
+	height: 19px; 
+}
+
+.ddl-classekillip{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width:154px; 
+	max-width:170px; 
+	width:50%; 
+	float:left;
+}
+
+.ddl-riscohemorragia{
+	border-color: #7F9DB9;
+	height: 19px; 
+	min-width:155px; 
+	max-width:170px;
+	width:50%; 
+	float:left;
+}
+
+.label-codu{
+	height: 18px; 
+	min-width: 60px; 
+	max-width: 80px;
+    width: 30%; 
+	vertical-align: middle; 
+	display: table-cell; 
+	text-align: center;
+    padding-top: 2px;
+}
+
+.label-fichacodu{
+	height: 18px; 
+	min-width: 86px; 
+	width: 25%;
+	display: table-cell; 
+	text-align: center; 
+	float: left;
+    padding-top: 2px;
+}
+
+.label-data{
+	height: 18px; 
+	min-width: 30px; 
+	max-width: 40px;
+    text-align: center; 
+	display: table-cell; 
+	padding-top: 2px;
+	float: left;
+}
+
+.label-localizacao{
+	height:18px; 
+	width:100px; 
+	text-align:left;
+	margin:0 3px 0 0;
+	float:left;
+	padding-top:3px;
+}
+
+.label-genero{
+	height:18px; 
+	width:120px;
+	display: table-cell;
+	text-align:left; 
+	padding:3px 3px 0 0; 
+	float:left;
+}
+
+.label-datanascimento{
+	height:18px; 
+	width:122px;  
+	text-align:left;
+	display: table-cell;	
+	padding:3px 3px 0 0; 
+	float:left;
+}
+
+.label-idade{
+	height: 18px; 
+	width: 20px; 
+	text-align:right;
+	display: table-cell;
+	vertical-align:middle;
+	padding:0 15px 0 10px; 
+	float:left;
+}
+
+.label-sintomas{
+	height:18px; 
+	width:122px;
+	text-align:left; 
+	padding:0 3px 0 0; 
+	float:left;
+	display: table-cell;
+	vertical-align:middle;
+}
+
+span.travessao{
+	float:left;
+	margin:0 2px 0 2px;
+}
+
+.label-criterios{
+	height:18px; 
+	width:60px;  
+	text-align:left;
+	display: table-cell;
+	padding:0 10px 0 0;
+}
+ 
+.label-observacoes {
+	height:18px; 
+	width:50px;  
+	text-align:left;
+	display: table-cell;	
+	padding:0 5px 0 0;
+	vertical-align:middle;
+}
+
+.label-veiculo{
+	height:18px; 
+	width:80px;
+	display: table-cell;	
+	text-align:left; 
+	padding:0 10px 0 0; 
+	float:left;
+}
+
+.label-tripulante{
+	height:18px; 
+	width:80px;  
+	text-align:left;
+	display: table-cell;
+	padding:0 10px 0 0; 
+	float:left;
+}
+
+.label-dadosclinicos{
+	height:18px; 
+	width:122px; 
+	text-align:left;
+	display: table-cell;
+	float:left;
+}
+
+.label-realizado{
+	height:18px; 
+	width:100px;  
+	text-align:left; 
+	float:left;
+	display: table-cell;
+}
+
+.text-box-values{
+
+    border: 1px solid #7F9DB9;
+    padding-left: 3px;
+   
+}
+
+.table{
+	vertical-align: middle; 
+	display: table-cell;
+}
+
+.label-tabela{
+	height:18px;
+	width:30px;
+	vertical-align: middle;
+    text-align: left;
+}
+
+/* formatação das div's containers */
+
+div.collapse-text{
+	float: left; 
+	vertical-align: middle;
+}
+
+div.collapse-icon {
+	float: right;
+	vertical-align: middle;
+}
+
+div.row1-c1{
+	float: left; 
+	width: 32%; 
+	margin: 5px 0 0 2%;
+}
+
+div.row1-c2{
+	float: left; 
+	width: 32%; 
+	margin: 5px 0 0 0;
+}
+
+div.row1-c3{
+	float: left; 
+	width: 32%; 
+	margin: 5px 2% 0 0;
+}
+
+div.row1-row{
+	margin: 0 auto 0 auto; 
+	width: 80%; 
+	display: table;
+}
+
+div.row23-c1{
+	float: left; 
+	width: 48%; 
+	margin:10px 0 5px 2%;
+}
+
+div.row23-c2{
+	float: left; 
+	width: 48%; 
+	margin: 10px 2% 5px 0;
+}
+
+div.row23-row{
+	margin:5px auto 5px auto;
+	width:90%;
+	display: table;
+}
+
+div.row23-row li{
+	list-style-type:square;
+
+}
+
+div.row-p2{
+	margin: 5px auto 5px auto; 
+	width: 80%; 
+	display: table;
+}
+
+div.row-p2 li{
+	list-style-type:square;
+	margin-left:30px;
+}
+
+}
+
+div.ecg{
+	margin:10px 2% 10px 2%;
+	width:96%;
+}
+
+div.realizado{
+	margin:10px 0 3px 0;
+	display: table;
+}
+
+div.realizado-ecg{
+	display: table; 
+	margin: 1px 1px 10px 1px;
+	width:100%;
+}
+
+div.enviaecg{
+	margin:0 0 20px 0;
+}
+
+div.botaoSubmeter{
+	width:100%;
+	margin-bottom:10px;
+}
+
+div.obspanel2{
+	vertical-align:middle;
+	display:table;
+	margin:10px 0 5px 0;
+	
+}
+
+
+.tb-fichacodu{
+	height: 16px; 
+	min-width: 100px; 
+	max-width: 100px;
+    width: 50%; 
+	border: 1px solid #7F9DB9;
+	display: table-cell;
+    float: left;
+	padding-left:2px;
+}
+
+.tb-dataocr{
+	height:16px; 
+	min-width:60px; 
+	max-width:80px; 
+	width:70%; 
+	border: 1px solid #7F9DB9;
+	display:table-cell;
+	float:left;
+	padding-left:2px;
+	margin:0 0 0 4px;
+}
+
+.hr-line{
+	margin-top:10px; 
+	background-color:#719DDB;
+}
+
+.tb-datanascimento{
+	height:18px; 
+	min-width:60px;
+	max-width:70px;
+	border: 1px solid #7F9DB9;
+	float:left;
+	width: 20%;
+	padding-left:2px;
+}
+
+.tb-idade{
+	min-width: 30px;
+	max-width: 40px;
+	height:16px;
+	padding-left:2px;
+	border: 1px solid #7F9DB9;
+	float: left;
+	
+}
+
+.tb-data{
+	height:16px; 
+	min-width:60px;
+	max-width:70px;
+	border: 1px solid #7F9DB9; 
+	float:left;
+	width: 20%;
+	padding-left:2px;
+}
+
+.tb-hora{
+	min-width:30px; 
+	max-width:40px; 
+	height:16px;
+	padding-left:2px;
+	border: 1px solid #7F9DB9; 
+	float:left;
+
+}
+
+.tb-obsprehosp{
+	padding:5px; 
+	width:250px; 
+	max-width:250px; 
+	height:130px; 
+	max-height:130px;
+	border: 1px solid #7F9DB9;
+}
+
+.tb-pressaoarterial{
+	min-width:30px; 
+	max-width:40px;
+	height:16px;	
+	border: 1px solid #7F9DB9;
+	float:left;
+}
+
+.cb-todosVeiculos{
+	display: table-cell; 
+	width: 20%; 
+	float: left;
+}
+
+.cb-todosVeiculos label{
+    margin-left:5px;
+}
+

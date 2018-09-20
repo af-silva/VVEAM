@@ -1,0 +1,209 @@
+#topmenu{
+	background-color:#014c91; /*COR 014c91*/
+	border-width:0;
+	border-style:solid;
+	padding:10px 0 10px 0;
+	display:block;
+	font-size:0;
+	float:left;
+	margin:0;
+	list-style:none;
+	width:100%;
+	height:40px;
+	
+}
+
+#topmenu ul{
+	padding:0 10px 10px;
+	margin:10px 0 0;
+	margin:0;
+	list-style:none;
+}
+	
+#topmenu li{
+	display:block;
+	white-space:nowrap;
+	font-size:0;
+	float:left;
+	margin:0 0 0 15px;
+	
+}
+
+#topmenu li:hover > *{
+	display:block;
+}
+	
+#topmenu li:hover{
+	position:relative;
+}
+
+#topmenu li:hover > a{
+	background-color:#334752; /*25333b*/
+	border-style:none;
+	font:14px Arial,Helvetica,sans-serif;
+	color:#EEEEEE;
+	text-decoration:none;
+}
+
+#topmenu li:hover > a img.def{
+	display:none;
+	float:left;
+}
+
+#topmenu li:hover > a img.over{
+	display:inline;
+	float:left;
+}
+	
+#topmenu a:active, #topmenu a:focus{
+	outline-style:none;
+}
+	
+#topmenu a{
+	display:block;
+	vertical-align:middle;
+	text-align:left;
+	text-decoration:none;
+	font:14px Arial,Helvetica,sans-serif;
+	color:#DDDDDD;
+	cursor:default;
+	padding:11px 35px 4px 20px;
+	background-color:#25333b; /*COR 014c91*/
+	background-repeat:repeat;
+	border-width:0px;
+	border-style:none;
+	
+}
+
+#topmenu img{
+	border:none;
+	vertical-align:middle;
+	margin-right:8px;
+	float:left;
+	padding:9px 0 9px 9px;
+}
+
+#topmenu img.over{
+	display:none;
+	float:left;
+}
+
+.menubuttons{
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+
+.menubuttons > a{
+	height:26px;
+	line-height:26px;
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+}
+
+.menubuttons:hover > a{
+	line-height:26px;
+}
+
+.leftmenubuttons{
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	height:10px;
+}
+
+.leftmenubuttons > a{
+	line-height:10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.leftmenubuttons:hover > a{
+	line-height:10px;
+}
+
+
+
+
+/* LEFT MENU */
+.leftmenu{
+	list-style:none;
+	width:100%;
+	display:block;
+}
+
+.leftmenu li{
+	display:block;
+	white-space:nowrap;
+	text-align:left;
+	text-decoration:none;
+	font:12px Arial,Helvetica,sans-serif;
+	cursor:default;
+	padding: 2px 0 2px 0;
+	height:20px;
+	border:none;
+	margin:4px 0;
+	
+}
+
+.leftmenu a{
+	display:block;
+	vertical-align:middle;
+	text-align:left;
+	text-decoration:none;
+	font:14px Arial,Helvetica,sans-serif;
+	color:#000000;
+	cursor:default;
+	padding:4px 18px;
+	background-color:#ededed;
+	background-repeat:repeat;
+	
+}
+
+.leftmenu li:hover > *{
+	display:block;
+}
+	
+.leftmenu li:hover{
+	position:relative;
+}
+
+.leftmenu li:hover > a{
+	background-color:#25333b;
+	border-style:none;
+	font:14px Arial,Helvetica,sans-serif;
+	color:#EEEEEE;
+	text-decoration:none;
+}
+
+.leftmenu li:hover > a img.def{
+	display:none;
+	float:left;}
+
+.leftmenu li:hover > a img.over{
+	display:inline;
+	float:left;
+}
+	
+.leftmenu li:active, #leftmenu li:focus{
+	outline-style:none;
+}
+
+.leftmenu img{
+	border:none;
+	float:left;
+	vertical-align:middle;
+	margin-right:8px;
+	padding: 4px 0 4px 4px;
+}
+
+.leftmenu img.over{
+	display:none;
+	float:left;
+}
+/* END LEFT MENU */
+
+/* source code: topmenu.com */
+/* modifed by VVEAM */
